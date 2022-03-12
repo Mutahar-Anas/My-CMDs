@@ -5,22 +5,33 @@ cd ~/wallpapers
 echo "What wallpaper do you want to pick"
 
 echo "1. = 'Arch'"
-echo "2. + 'YE Cover'"
-
-# ------------------------------------
-
+echo "2. = 'YE Cover'"
 read yn
 
-if [ yn = '1' ]
+# ------------------------------------
+
+if [ $yn = '1' ]
     then
-        cp Arch.jpg ~
+        echo "picking Arch"
+        rm -r ~/wallpaper.jpg
+        cp -r Arch.jpg ~
+        cd ~
+        mv Arch.jpg wallpaper.jpg
 fi
 
 # ------------------------------------
 
-if [ yn = '2' ]
+if [ $yn = '2' ]
     then
-        cp YE.jpg ~
+        echo "picking Ye"
+        rm -r ~/wallpaper.jpg
+        cp -r YE.jpg ~
+        cd ~
+        mv YE.jpg wallpaper.jpg
 fi
 
-# ------------------------------------s
+# -------------------------------------
+
+sleep 2
+echo Done
+
