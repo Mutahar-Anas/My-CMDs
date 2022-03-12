@@ -1,0 +1,26 @@
+#My Wallpaper thing
+
+cd ~/wallpapers
+
+echo "What wallpaper do you want to pick"
+
+echo "1. = 'Arch'"
+echo "2. + 'YE Cover'"
+
+# ------------------------------------
+
+read yn
+
+if [ yn = '1' ]
+    then
+        cp Arch.jpg ~
+fi
+
+# ------------------------------------
+
+if [ yn = '2' ]
+    then
+        cp YE.jpg ~
+fi
+
+# ------------------------------------s
