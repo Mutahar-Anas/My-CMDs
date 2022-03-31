@@ -14,12 +14,13 @@ sleep .2
 echo "This Will Take A Few Seconds"
 piactl connect
 sleep 3.4
+clear
 piactl get connectionstate
-sleep .3
+sleep .5
 piactl get region
-sleep .3
+sleep .5
 piactl get vpnip
-sleep .3
+sleep 1
 fi
 if [ $YN = 'd' ] || [ $YN = 'D' ]
     then
