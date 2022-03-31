@@ -29,5 +29,8 @@ sleep .2
 echo 'Disconnecting'
 piactl disconnect
 sleep 2
+clear
 piactl get connectionstate
 fi
+sleep 1
+clear
