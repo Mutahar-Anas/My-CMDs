@@ -1,2 +1,2 @@
 sudo mount /dev/sr0 /media 
-ps3-disc-dumper -o ~
+ps3-disc-dumper -o /mnt/4TbHdd/Emus and Roms/Roms/PlayStation 3/
