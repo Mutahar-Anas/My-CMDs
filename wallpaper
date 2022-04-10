@@ -6,6 +6,7 @@ echo "What wallpaper do you want to pick"
 
 echo "1. = 'Arch'"
 echo "2. = 'YE Cover'"
+ech0 "3. = 'VaperWave 1'"
 read yn
 
 # ------------------------------------
@@ -32,9 +33,21 @@ fi
 
 # -------------------------------------
 
+if [ $yn = '3' ]
+    then
+        echo "picking VaperWave 1"
+        rm -r ~/wallpaper.jpg
+        cp -r VaperWave1.jpg ~
+        cd ~
+        mv VaperWave1.jpg wallpaper.jpg
+fi
+
+# ------------------------------------
+
 sleep 2
 clear
 echo Done
 sleep 1
 clear
+
 
