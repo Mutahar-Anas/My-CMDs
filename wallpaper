@@ -6,7 +6,7 @@ echo "What wallpaper do you want to pick"
 
 echo "1. = 'Arch'"
 echo "2. = 'YE Cover'"
-ech0 "3. = 'VaperWave 1'"
+echo "3. = 'VaperWave 1'"
 read yn
 
 # ------------------------------------
