@@ -35,7 +35,7 @@ sudo pacman -Syu
 sudo pacman-key --populate
 echo 'yay'
 yay -Syu
-
+fi
 #-----------------------------------
 if yn = [ 'n' ] || [ 'N' ]
 then
