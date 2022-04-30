@@ -21,7 +21,6 @@ cp -r rpcs3 ~/.config
 cp -r PCSX2 ~/.config
 cp -r dolphin-emu ~/.config
 cd ~/My-Arch-Conf/need\ files/
-cp -r wallpaper.jpg ~
 cp -r wallpapers ~
 sudo cp -r xfce4 ~/.config
 cp -r .bashrc ~
