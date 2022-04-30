@@ -1,0 +1,47 @@
+#this is upate every for arch / my stuff!
+echo "do you wish to update?"
+echo "y for yes, N for no"
+read yn
+#-----------------------------------
+if yn = [ 'y' ] || [ 'Y' ]
+then
+echo 'my cmds'
+clear
+cd ~
+cd My-CMDs
+./Update-Repo
+./Setup.conf
+echo 'my conf of arch'
+clear
+cd ~
+cd My-Arch-Conf
+./Update-Repo
+cd ~/My-Arch-Conf/need\ files/EMU-Conf-files/
+cp -r rpcs3 ~/.config
+cp -r PCSX2 ~/.config
+cp -r dolphin-emu ~/.config
+cd ~/My-Arch-Conf/need\ files/
+cp -r wallpaper.jpg ~
+cp -r wallpapers ~
+sudo cp -r xfce4 ~/.config
+cp -r .bashrc ~
+sudo cp -r neofetch ~/.config
+mkdir /etc/libvirt
+sudo cp -r libvirt.conf /etc/libvirt/libvirt.conf
+cp -r libvirt.conf ~/.config/libvirt/libvirt.conf
+echo 'pacman'
+sudo pacman-key --populate
+sudo pacman -Syu
+sudo pacman-key --populate
+echo 'yay'
+yay -Syu
+
+#-----------------------------------
+if yn = [ 'n' ] || [ 'N' ]
+then
+clear
+echo 'ok'
+sleep .8
+clear
+fi
+#-----------------------------------
