@@ -40,7 +40,7 @@ if [ $yn =  'y' ] || [ $yn =  'Y' ]
     yay -Syu
 fi
 #-----------------------------------
-if [ $yn =  'n' ] || [ $yn =  'B' ]
+if [ $yn =  'n' ] || [ $yn =  'N' ]
     then
 clear
 echo 'ok'
@@ -48,7 +48,7 @@ sleep .8
 clear
 fi
 #-----------------------------------
-if yn = [ 'y' ] || [ 'Y' ]
+if [ $yn =  'y' ] || [ $yn =  'Y' ]
 then
     echo "A reboot is needed,type 'y' to reboot now and 'n' to reboot later"
     read yn4
